@@ -39,6 +39,20 @@ function initNavbar() {
         }
       }
     });
+    // Close button inside drawer
+    const drawerCloseBtn = document.querySelector('.drawer-close');
+    if (drawerCloseBtn) {
+      drawerCloseBtn.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        // Reset the mobile toggle icon to bars when drawer is closed
+        if (mobileToggle) {
+          const icon = mobileToggle.querySelector('i');
+          if (icon) {
+            icon.className = 'fas fa-bars';
+          }
+        }
+      });
+    }
   }
 }
 

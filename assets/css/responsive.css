@@ -78,7 +78,7 @@ img, video, iframe {
     z-index: 998;
     overflow-y: auto;
   }
-
+.drawer-close {\n  align-self: flex-end;\n  background: none;\n  border: none;\n  font-size: 1.5rem;\n  color: var(--text-muted);\n  margin-bottom: 1rem;\n  cursor: pointer;\n}\n
   [data-theme="dark"] .nav-menu {
     background: rgba(9, 13, 22, 0.97);
   }
