@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Webrion Showcase Projects</title>
+  <meta name="description" content="Explore 12+ award-winning software portfolio projects created by Webrion: Nova Fashion, FreshMart, QuickRide, EduSpark, FoodHub, HotelNest, and more." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Sticky Navigation Header -->
+  <header class="navbar scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-brand">
+        <img src="assets/images/logo.jpg" alt="Webrion Logo" class="logo-img" />
+        <div>
+          <span>Webrion</span>
+          <span class="logo-sub">WE BUILD. YOU GROW.</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="student-projects.html" class="nav-link">Student Projects</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="https://wa.me/919087923641?text=Hi%20Webrion!%20I%20saw%20your%20portfolio%20and%20want%20a%20website." target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat Now
+        </a>
+        <button class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header Banner -->
+  <section class="section" style="background: var(--grad-soft); padding-top: 8rem; text-align: center;">
+    <div class="container">
+      <span class="badge-tag"><i class="fas fa-layer-group"></i> OUR PORTFOLIO</span>
+      <h1 class="section-title">Award-Winning <span class="text-gradient">Project Gallery</span></h1>
+      <p class="section-subtitle" style="max-width: 650px; margin: 0 auto 2rem auto;">
+        Browse through 12+ real-world showcase websites, e-commerce applications, student projects, and Flutter mobile apps.
+      </p>
+
+      <!-- Live Search Bar -->
+      <div style="max-width: 500px; margin: 0 auto; position: relative;">
+        <input type="text" id="portfolioSearchInput" placeholder="Search by name, technology (e.g. React, Flutter, AI)..." 
+               style="width: 100%; padding: 0.85rem 1.5rem 0.85rem 3rem; border-radius: var(--radius-full); border: 1px solid var(--border-color); background: var(--bg-card); font-size: 0.95rem; outline: none; box-shadow: var(--shadow-sm);" />
+        <i class="fas fa-search" style="position: absolute; left: 1.2rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Category Filter Tabs -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Projects (12)</button>
+        <button class="filter-btn" data-filter="business">Business Websites</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce Stores</button>
+        <button class="filter-btn" data-filter="student">Student Projects</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="web-app">Web Applications</button>
+      </div>
+
+      <!-- Portfolio Items Grid -->
+      <div id="portfolioGrid" class="portfolio-grid">
+        <!-- Rendered dynamically by portfolio-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Lightbox Modal -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeCaseStudyModal()"><i class="fas fa-times"></i></button>
+      <div id="caseStudyModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-brand" style="color: #FFF;">
+            <img src="assets/images/logo.jpg" alt="Webrion Logo" class="logo-img" />
+            <div>
+              <span>Webrion</span>
+              <span class="logo-sub">WE BUILD. YOU GROW.</span>
+            </div>
+          </a>
+          <p>Webrion Portfolio Showcase: High quality web and mobile applications.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="student-projects.html">Student Projects</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Direct Contact</h4>
+          <p style="color: #94A3B8;"><i class="fas fa-phone-alt"></i> +91 90879 23641</p>
+          <p style="color: #94A3B8;"><i class="fas fa-envelope"></i> webrion.studio@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Webrion. All Rights Reserved.</div>
+        <div>We Build. You Grow.</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <a href="https://wa.me/919087923641" target="_blank" class="fab-whatsapp" title="WhatsApp Us"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio-data.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+</body>
+</html>
